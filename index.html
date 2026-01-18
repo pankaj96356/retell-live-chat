@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Retell Live Chat Test</title>
   <meta charset="UTF-8">
+  <title>Retell Live Chat Test</title>
 </head>
 <body>
+
   <h1>Retell AI – Live Production Test</h1>
   <p>This is a real production chat test.</p>
 
   <!-- Retell Chat Widget -->
-  <script src="https://cdn.retellai.com/widget.js"></script>
   <script>
-    RetellChat.init({
-      agentId: "agent_d8b6aca4cce9be701a93429b07"
-    });
+    (function () {
+      var script = document.createElement("script");
+      script.src = "https://cdn.retellai.com/chat/widget.js";
+      script.async = true;
+      script.onload = function () {
+        window.RetellChat.init({
+          agentId: "PASTE_YOUR_AGENT_ID_HERE"
+        });
+      };
+      document.head.appendChild(script);
+    })();
   </script>
 
 </body>
 </html>
-
