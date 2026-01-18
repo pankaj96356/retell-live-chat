@@ -1,28 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Retell Live Chat Test</title>
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Retell Chat Test</title>
+  </head>
+  <body>
 
-  <h1>Retell AI – Live Production Test</h1>
-  <p>This is a real production chat test.</p>
+    <h2>Retell AI – Live Production Test</h2>
+    <p>If chat is enabled, widget will appear.</p>
 
-  <!-- Retell Chat Widget -->
-  <script>
-    (function () {
-      var script = document.createElement("script");
-      script.src = "https://cdn.retellai.com/chat/widget.js";
-      script.async = true;
-      script.onload = function () {
-        window.RetellChat.init({
-          agentId: "agent_d8b6aca4cce9be701a93429b07"
-        });
-      };
-      document.head.appendChild(script);
-    })();
-  </script>
+    <script
+      src="https://cdn.retellai.com/chat/widget.js"
+      data-agent-id="agent_d8b6aca4cce9be701a93429b07">
+    </script>
 
-</body>
+  </body>
 </html>
